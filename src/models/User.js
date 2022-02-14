@@ -54,4 +54,8 @@ export default class User extends Model {
 
     return this;
   }
+
+  passwordIsValid(password) {
+    return becryptjs.compare(password, this.password_hash);
+  }
 }
