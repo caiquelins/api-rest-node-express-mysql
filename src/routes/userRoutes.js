@@ -6,7 +6,7 @@ import loginRequired from '../middlewares/loginRequired';
 const router = new Router();
 
 // Não deveriam existir em um sistema real
-router.get('/', userController.index); // Lista usuários
+// router.get('/', userController.index); // Lista usuários
 // router.get('/:id', userController.show); // Lista um usuário
 
 // Esses devem existir
